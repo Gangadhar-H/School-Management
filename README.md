@@ -10,3 +10,7 @@ CREATE TABLE schools (
     latitude FLOAT NOT NULL,
     longitude FLOAT NOT NULL
 );
+
+# Project setup
+npm init -y
+npm install express mysql2 body-parser

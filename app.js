@@ -1,6 +1,7 @@
 const express = require('express');
 const addSchool = require('./routes/addSchool');
 const listSchools = require('./routes/listSchools');
+require('dotenv').config();
 
 const app = express();
 

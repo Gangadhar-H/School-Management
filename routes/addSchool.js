@@ -2,15 +2,14 @@ const express = require('express');
 const router = express.Router();
 const db = require('../db');
 
-router.post('/addSchool', (req, res) => {
+router.post('/addSchool', (req, res, err) => {
     const { name, address, latitude, longitude } = req.body;
-    // console.log(name, address, latitude, longitude)
-
+    // console.log(name, address, latitude, longitude);
     // Validating input data
     if (!name || !address || latitude === undefined || longitude === undefined) {
         return res.status(400).json({ message: 'All fields are required.' });
     }
-    
+
     if (isNaN(latitude) || isNaN(longitude)) {
         return res.status(400).json({ message: 'Latitude and Longitude must be numbers.' });
     }
