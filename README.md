@@ -10,3 +10,11 @@ CREATE TABLE schools (
 # Project setup
 npm init -y
 npm install 
+
+# live links
+For adding school - https://school-management-ten-topaz.vercel.app/addSchool
+
+For school lists - https://school-management-ten-topaz.vercel.app/listSchools?latitude= &longitude=
+
+# Postman collection
+https://elements.getpostman.com/redirect?entityId=37884927-bb7105b4-865d-4009-babb-1c65ed606e60&entityType=collection
